@@ -27,7 +27,7 @@ function foldPaper(points, fold) {
 function printPoints(points, gridDimensions) {
   let ascii = [ ];
   for (let row = 0; row < gridDimensions.y; ++row) {
-    ascii.push(Array(gridDimensions.x).fill('.'));
+    ascii.push(Array(gridDimensions.x).fill(' '));
   }
   for (let i = 0; i < points.length; ++i) {
     ascii[points[i].y][points[i].x] = '#';
